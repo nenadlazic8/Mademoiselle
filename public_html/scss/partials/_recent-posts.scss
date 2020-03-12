@@ -1,0 +1,35 @@
+
+.recent-posts{
+
+    .recent-posts-item{
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    color: $dark;
+
+
+    a{
+        text-decoration: none;
+    }
+
+    .recent-posts-content{
+        padding: 15px;
+        background-color: $light;
+        bottom: -65px;
+        position: absolute;
+        max-width: 95%;
+        left: 5%;
+        right: 5%;
+        min-height: 143px;
+    }
+
+    .recent-posts-date{
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+
+    .recent-posts-desc{
+        text-transform: uppercase;
+    }
+}

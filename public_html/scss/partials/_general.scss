@@ -1,0 +1,68 @@
+
+img{
+    max-width: 100%;
+}
+
+html{
+    font-size: 10px; // 1 rem
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: $lato;
+    color: $dark;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 3.3rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h1,h3{
+    font-family: $bodoni;
+}
+
+p{
+    line-height: 24px;
+}
+
+.heading{
+    font-family: $bodoni;
+    letter-spacing: 3px;
+    margin: 50px 0;
+    text-transform: uppercase;
+
+    &:after{
+        content: '';
+        margin: 20px 0;
+        width: 6%;
+        height: 1px;
+        background-color: $theme-color;
+        display: block;
+    }
+}
+
+//RESPONSIVE FOR .heading
+
+@media (min-width: 1000px){
+    
+    h2{
+        font-size: 3.6rem;
+    }
+    
+    .heading{
+        letter-spacing: 5px;
+    }
+}
+
+.btn{
+    border: 1px solid $primary;
+    padding: 13px 34px;
+}

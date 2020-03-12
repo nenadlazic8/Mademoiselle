@@ -1,0 +1,70 @@
+
+.testemonials{
+    margin-top: 111px;
+
+    .owl-carousel{
+        border: 1px solid $theme-color;
+        padding: 55px 15px;
+    }
+
+    .owl-dots {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .owl-dot{
+        height: 10px;
+        margin-right: 10px;
+        width: 10px;
+        background-color: lighten($theme-color, 5%) !important;
+        border-radius: 50%;
+    }
+
+    .owl-dot.active{
+        background-color: $theme-color !important;
+    }
+
+    .testemonials-wrapper{
+
+        justify-content: space-evenly;
+
+        .testemonials-info{
+            padding: 30px 25px;
+            position: relative;
+        }
+
+        .person-name{
+            margin-bottom: 35px;
+            font-family: $lato;
+        }
+
+    }
+}
+
+@media (min-width: 920px){
+
+    .testemonials{
+        .owl-carousel{
+            border: 1px solid $theme-color;
+            padding: 55px 0;
+        } 
+
+        .owl-dots {
+            display: inline-block;
+            position: absolute;
+            left: 60%;
+            transform: translateX(-50%);
+        }
+
+        .testemonials-wrapper{
+            .testemonials-info{
+                padding: 30px 10px;
+                position: relative;
+            } 
+        }
+
+    }
+
+}
