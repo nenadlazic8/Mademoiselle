@@ -7410,17 +7410,20 @@ header {
   background-size: cover;
   background-position: center center; }
   .hero h1 {
-    color: #fff; }
+    color: #fff;
+    font-size: 4rem; }
   .hero .hero-heading {
     letter-spacing: 4px;
     max-width: 100%;
     margin: 0 auto; }
 
 @media (min-width: 1000px) {
-  .hero .hero-heading {
-    letter-spacing: 20px;
-    max-width: 50%;
-    margin: 0 auto; } }
+  .hero {
+    font-size: 6rem; }
+    .hero .hero-heading {
+      letter-spacing: 20px;
+      max-width: 50%;
+      margin: 0 auto; } }
 
 .recent-posts {
   color: #1E1E1E; }
@@ -7450,6 +7453,20 @@ header {
 
 .services img {
   height: 100%; }
+
+.services .btn.text-primary {
+  position: relative; }
+  .services .btn.text-primary:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: rgba(219, 183, 183, 0.3);
+    transition: 0.5s linear; }
+  .services .btn.text-primary:hover:after {
+    width: 100%; }
 
 .services .services-gallery {
   height: 100%; }
