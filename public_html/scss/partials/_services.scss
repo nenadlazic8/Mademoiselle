@@ -5,14 +5,14 @@
         margin: 0;
         height: 100%;
     }
-    
+
     img{
         height: 100%;
     }
 
     .btn.text-primary{
         position: relative;
-        
+
         &:after{
             content: '';
             position: absolute;
@@ -20,22 +20,22 @@
             bottom: 0;
             left: 0;
             width: 0;
-            background-color: darken(rgba($theme-color, 0.3), 10%);
+            // background-color: darken(rgba($theme-color, 0.3), 10%);
             transition: 0.5s linear;
         }
-        
+
         &:hover{
             &:after{
                 width: 100%;
             }
         }
-       
+
     }
-    
+
     .services-gallery{
         height: 100%;
     }
-    
+
     .services-content {
         position: relative;
         top: 50%;
@@ -50,16 +50,58 @@
 }
 
 .services-item-wrapper:nth-of-type(1n){
-            .services-content-item.col-12.col-md-6{
-                background-color: $services-primary;
+    .services-content-item.col-12.col-md-6{
+        background-color: $services-primary;
+        .btn.text-primary{
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                background-color: darken(rgba($services-primary, 0.3), 10%);
+                transition: 0.5s linear;
             }
+
+            &:hover{
+                &:after{
+                    width: 100%;
+                }
+            }
+
         }
+    }
+}
 
 .services-item-wrapper:nth-of-type(2n){
-            .services-content-item.col-12.col-md-6{
-                background-color: $theme-color;
+    .services-content-item.col-12.col-md-6{
+        background-color: $theme-color;
+        .btn.text-primary{
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                background-color: darken(rgba($theme-color, 0.3), 10%);
+                transition: 0.5s linear;
             }
+
+            &:hover{
+                &:after{
+                    width: 100%;
+                }
+            }
+
         }
+    }
+}
 
 @media (min-width: 920px){
     .services-item-wrapper:nth-of-type(2n){
@@ -67,20 +109,20 @@
             order: 1;
         }
     }
-    
-    .services{
-       .services-content {
-        position: relative;
-        top: 50%;
-        transform: translatey(-50%);
-        padding: 143px 95px;
-        text-transform: uppercase;
 
-        h2{
-            margin-bottom: 30px;
-        }     
-    } 
+    .services{
+        .services-content {
+            position: relative;
+            top: 50%;
+            transform: translatey(-50%);
+            padding: 143px 95px;
+            text-transform: uppercase;
+
+            h2{
+                margin-bottom: 30px;
+            }     
+        } 
     }
-     
+
 }
 
