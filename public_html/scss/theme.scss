@@ -3,11 +3,12 @@
 
 
 
-// custhom theme partials
+// costume theme partials
 @import "partials/_variables.scss";
 @import "partials/_font.scss";
+@import "partials/_general.scss";
+
 @import "partials/_animations.scss";
-@import "partials/_fonts.scss";
 
 @import "partials/_header.scss";
 @import "partials/_hero.scss";
@@ -16,4 +17,4 @@
 @import "partials/_testemonials.scss";
 @import "partials/_footer.scss";
 
-@import "partials/_general.scss";
+

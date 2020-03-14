@@ -7141,19 +7141,62 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'BodoniSvtyTwoITCTT-Book';
-  src: url("BodoniSvtyTwoITCTT-Book.eot") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'BodoniSvtyTwoITCTT-Book';
-  src: url("fonts/BodySvtyTwoITCCTT-Book/data:application/x-font-woff;charset=utf-8;base64,") format("woff"), url("fonts/BodySvtyTwoITCCTT-Book/BodoniSvtyTwoITCTT-Book.ttf") format("truetype"), url("fonts/BodySvtyTwoITCCTT-Book/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book") format("svg");
+  src: local(BodoniSvtyTwoITCTT-Book), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.eot?#iefix") format("embedded-opentype"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.woff") format("woff"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.ttf") format("truetype"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 /*
     font-family: 'Lato', sans-serif;
 */
+img {
+  max-width: 100%; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: #1E1E1E; }
+
+h1 {
+  font-size: 6rem; }
+
+h2 {
+  font-size: 3.3rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h1, h3 {
+  font-family: "BodoniSvtyTwoITCTT-Book"; }
+
+p {
+  line-height: 24px; }
+
+.heading {
+  font-family: "BodoniSvtyTwoITCTT-Book";
+  letter-spacing: 3px;
+  margin: 50px 0;
+  text-transform: uppercase; }
+  .heading:after {
+    content: '';
+    margin: 20px 0;
+    width: 6%;
+    height: 1px;
+    background-color: #ECD9D9;
+    display: block; }
+
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 3.6rem; }
+  .heading {
+    letter-spacing: 5px; } }
+
+.btn {
+  border: 1px solid #1e1e1e;
+  padding: 13px 34px; }
+
 /*CSS ANIMACIJE*/
 @-webkit-keyframes buzz {
   10% {
@@ -7426,6 +7469,7 @@ header {
       margin: 0 auto; } }
 
 .recent-posts {
+  overflow-x: hidden;
   color: #1E1E1E; }
   .recent-posts .recent-posts-item {
     position: relative;
@@ -7452,7 +7496,7 @@ header {
   height: 100%; }
 
 .services img {
-  height: 100%; }
+  min-height: 100%; }
 
 .services .btn.text-primary {
   position: relative; }
@@ -7573,52 +7617,3 @@ footer {
       color: #e4c8c8; }
   footer p {
     font-size: 12px; }
-
-img {
-  max-width: 100%; }
-
-html {
-  font-size: 10px; }
-
-body {
-  font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
-  color: #1E1E1E; }
-
-h1 {
-  font-size: 6rem; }
-
-h2 {
-  font-size: 3.3rem; }
-
-h3 {
-  font-size: 3rem; }
-
-h1, h3 {
-  font-family: "BodoniSvtyTwoITCTT-Book"; }
-
-p {
-  line-height: 24px; }
-
-.heading {
-  font-family: "BodoniSvtyTwoITCTT-Book";
-  letter-spacing: 3px;
-  margin: 50px 0;
-  text-transform: uppercase; }
-  .heading:after {
-    content: '';
-    margin: 20px 0;
-    width: 6%;
-    height: 1px;
-    background-color: #ECD9D9;
-    display: block; }
-
-@media (min-width: 1000px) {
-  h2 {
-    font-size: 3.6rem; }
-  .heading {
-    letter-spacing: 5px; } }
-
-.btn {
-  border: 1px solid #1e1e1e;
-  padding: 13px 34px; }
