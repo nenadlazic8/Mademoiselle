@@ -17,7 +17,10 @@ $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
         items : 1,
-        loop : true
+        loop : true,
+        autoplay : true,
+        autoplayHoverPause : true,
+        autoplayTimeout : 3500
     });
 
     //ANIMATION ON SCROLL
