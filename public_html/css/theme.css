@@ -7469,7 +7469,7 @@ header {
       margin: 0 auto; } }
 
 .recent-posts {
-  overflow-x: hidden;
+  overflow: hidden;
   color: #1E1E1E; }
   .recent-posts .recent-posts-item {
     position: relative;
@@ -7618,3 +7618,29 @@ footer {
       color: #e4c8c8; }
   footer p {
     font-size: 12px; }
+
+.hero-about {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("../img/about.png"); }
+
+.about-us {
+  margin: 50px 0; }
+  .about-us .input-group {
+    border: 1px solid #1E1E1E;
+    padding: 10px 0;
+    font-family: "BodoniSvtyTwoITCTT-Book"; }
+    .about-us .input-group * {
+      border: none;
+      background-color: #fff;
+      box-shadow: none;
+      font-style: italic; }
+    .about-us .input-group span#basic-text1 {
+      transform: rotate(80deg);
+      margin-right: 15px; }
+    .about-us .input-group input.form-control.my-0.py-1 {
+      margin-left: 15px; }
+  .about-us .about-us-content h2 {
+    margin-bottom: 4rem; }
+  .about-us .about-us-content p {
+    margin-bottom: 4rem; }
+  .about-us .about-us-content figure {
+    margin-bottom: 4rem; }

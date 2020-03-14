@@ -1,0 +1,46 @@
+
+.hero-about{
+    background-image: (linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0)),url('../img/about.png'));
+}
+
+.about-us{
+    margin: 50px 0;
+
+
+    .input-group{
+        border: 1px solid $dark;
+        padding: 10px 0;
+        font-family: $bodoni;
+
+        *{
+            border: none;
+            background-color: $light;
+            box-shadow: none;
+
+            font-style: italic;
+        }
+
+        span#basic-text1 {
+            transform: rotate(80deg);
+            margin-right: 15px;
+        }
+
+        input.form-control.my-0.py-1 {
+            margin-left: 15px;
+        }
+    }
+    
+    .about-us-content{
+        h2{
+            margin-bottom: 4rem;
+        }
+        
+        p{
+            margin-bottom: 4rem;
+        }
+        
+        figure{
+            margin-bottom: 4rem;
+        }
+    }
+}
