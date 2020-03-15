@@ -13,6 +13,10 @@ body{
     color: $dark;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 h1{
     font-size: 6rem;
 }
@@ -30,7 +34,11 @@ h1,h3{
 }
 
 p{
-    line-height: 24px;
+    line-height: 26px;
+}
+
+iframe{
+    width: 100%;
 }
 
 .heading{

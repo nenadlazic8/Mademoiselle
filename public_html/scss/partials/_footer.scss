@@ -1,7 +1,7 @@
 
 footer{
     
-    margin-top: 80px;
+    margin-top: 30px;
     a{
         text-decoration: none;
         color: $theme-color;
@@ -14,5 +14,11 @@ footer{
     
     p{
         font-size: 12px;
+    }
+}
+
+@media(min-width: 920px){
+    footer{
+        margin-top: 80px;
     }
 }

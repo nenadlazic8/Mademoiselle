@@ -5,6 +5,11 @@
     .owl-carousel{
         border: 1px solid $theme-color;
         padding: 55px 15px;
+        
+        img{
+            max-height: 326px;
+            height: 100%;
+        }
     }
 
     .owl-dots {
