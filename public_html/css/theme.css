@@ -7713,3 +7713,38 @@ footer {
     padding: 65 65px;
     font-size: 2.4rem;
     margin-top: 100px; } }
+
+.blog-single-header {
+  padding-top: 65px; }
+  .blog-single-header h2 {
+    margin: 25px 0;
+    padding-right: 0px;
+    font-style: bold; }
+  .blog-single-header .category {
+    font-family: "BodoniSvtyTwoITCTT-Book"; }
+    .blog-single-header .category .category-date {
+      font-style: italic; }
+
+.blog-single-content .costum-container {
+  max-width: 750px;
+  margin: 75px auto;
+  padding: 0 15px; }
+  .blog-single-content .costum-container p {
+    font-size: 1.8rem; }
+
+.blog-single-content .tags {
+  margin: 40px 0; }
+  .blog-single-content .tags a.tag {
+    padding: 10px 15px;
+    background-color: #F5F5F5;
+    margin-right: 5px; }
+    .blog-single-content .tags a.tag:hover {
+      background-color: gainsboro;
+      cursor: pointer; }
+
+@media (min-width: 920px) {
+  .blog-single-header {
+    padding-top: 165px; }
+    .blog-single-header h2 {
+      margin: 25px 0;
+      padding-right: 180px; } }
