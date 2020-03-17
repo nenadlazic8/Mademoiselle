@@ -7,6 +7,8 @@ $(document).ready(function () {
         $('.hero').css('margin-top', headerH);
         $('.contact-content').css('margin-top', headerH);
         $('.blog-single-header').css('margin-top', headerH);
+        $('.single-service-content').css('margin-top', headerH);
+        
     }
 
     heroSectionMargin();

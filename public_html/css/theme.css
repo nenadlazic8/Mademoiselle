@@ -7778,3 +7778,14 @@ footer {
 .hero.error-hero .btn {
   border: 1px solid #fff;
   color: #fff; }
+
+.single-service-content {
+  padding: 70px 0; }
+  .single-service-content .row {
+    justify-content: space-between; }
+
+@media (min-width: 920px) {
+  .single-service-content {
+    padding: 170px 0; }
+    .single-service-content .row {
+      justify-content: space-between; } }

@@ -1,0 +1,18 @@
+
+.single-service-content{
+    padding: 70px 0;
+    
+    .row{
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 920px){
+    .single-service-content{
+    padding: 170px 0;
+    
+    .row{
+        justify-content: space-between;
+    }
+}
+}
