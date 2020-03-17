@@ -7435,6 +7435,27 @@ header {
       width: 28%; }
   header .navbar-brand {
     max-width: 50%; }
+  header .icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #B6B6B6;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px; }
+  header .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%; }
+  header .navbar-toggler .middle-bar {
+    opacity: 0; }
+  header .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%; }
+  header .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0); }
+  header .navbar-toggler.collapsed .middle-bar {
+    opacity: 1; }
+  header .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0); }
 
 /*    RESPONSIVE      */
 @media (min-width: 1000px) {
@@ -7668,6 +7689,7 @@ footer {
   color: #515151; }
 
 .contact-content {
+  overflow-x: hidden;
   min-height: 600px;
   padding-top: 30px; }
   .contact-content .container {
@@ -7715,6 +7737,7 @@ footer {
     margin-top: 100px; } }
 
 .blog-single-header {
+  overflow-x: hidden;
   padding-top: 65px; }
   .blog-single-header h2 {
     margin: 25px 0;
@@ -7725,22 +7748,23 @@ footer {
     .blog-single-header .category .category-date {
       font-style: italic; }
 
-.blog-single-content .costum-container {
-  max-width: 750px;
-  margin: 75px auto;
-  padding: 0 15px; }
-  .blog-single-content .costum-container p {
-    font-size: 1.8rem; }
-
-.blog-single-content .tags {
-  margin: 40px 0; }
-  .blog-single-content .tags a.tag {
-    padding: 10px 15px;
-    background-color: #F5F5F5;
-    margin-right: 5px; }
-    .blog-single-content .tags a.tag:hover {
-      background-color: gainsboro;
-      cursor: pointer; }
+.blog-single-content {
+  overflow-x: hidden; }
+  .blog-single-content .costum-container {
+    max-width: 750px;
+    margin: 75px auto;
+    padding: 0 15px; }
+    .blog-single-content .costum-container p {
+      font-size: 1.8rem; }
+  .blog-single-content .tags {
+    margin: 40px 0; }
+    .blog-single-content .tags a.tag {
+      padding: 10px 15px;
+      background-color: #F5F5F5;
+      margin-right: 5px; }
+      .blog-single-content .tags a.tag:hover {
+        background-color: gainsboro;
+        cursor: pointer; }
 
 @media (min-width: 920px) {
   .blog-single-header {
@@ -7748,3 +7772,10 @@ footer {
     .blog-single-header h2 {
       margin: 25px 0;
       padding-right: 180px; } }
+
+.hero.error-hero .hero-heading {
+  font-size: 6rem; }
+
+.hero.error-hero .btn {
+  border: 1px solid #fff;
+  color: #fff; }
