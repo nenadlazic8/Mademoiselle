@@ -7601,8 +7601,7 @@ header {
     border: 1px solid #ECD9D9;
     padding: 55px 15px; }
     .testemonials .owl-carousel img {
-      max-height: 326px;
-      height: 100%; }
+      max-height: 326px; }
   .testemonials .owl-dots {
     display: inline-block;
     position: absolute;
