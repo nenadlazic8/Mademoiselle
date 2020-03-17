@@ -7139,70 +7139,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-@font-face {
-  font-family: 'BodoniSvtyTwoITCTT-Book';
-  src: local(BodoniSvtyTwoITCTT-Book), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.eot?#iefix") format("embedded-opentype"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.woff") format("woff"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.ttf") format("truetype"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/*
-    font-family: 'Lato', sans-serif;
-*/
-img {
-  max-width: 100%; }
-
-html {
-  font-size: 10px; }
-
-body {
-  font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
-  color: #1E1E1E; }
-
-a:hover {
-  text-decoration: none; }
-
-h1 {
-  font-size: 6rem; }
-
-h2 {
-  font-size: 3.3rem; }
-
-h3 {
-  font-size: 3rem; }
-
-h1, h3 {
-  font-family: "BodoniSvtyTwoITCTT-Book"; }
-
-p {
-  line-height: 26px; }
-
-iframe {
-  width: 100%; }
-
-.heading {
-  font-family: "BodoniSvtyTwoITCTT-Book";
-  letter-spacing: 3px;
-  margin: 50px 0;
-  text-transform: uppercase; }
-  .heading:after {
-    content: '';
-    margin: 20px 0;
-    width: 6%;
-    height: 1px;
-    background-color: #ECD9D9;
-    display: block; }
-
-@media (min-width: 1000px) {
-  h2 {
-    font-size: 3.6rem; }
-  .heading {
-    letter-spacing: 5px; } }
-
-.btn {
-  border: 1px solid #1e1e1e;
-  padding: 13px 34px; }
-
 /*CSS ANIMACIJE*/
 @-webkit-keyframes buzz {
   10% {
@@ -7401,6 +7337,70 @@ iframe {
 .jump {
   transform-origin: 50% 50%;
   animation: jump .5s linear alternate infinite; }
+
+@font-face {
+  font-family: 'BodoniSvtyTwoITCTT-Book';
+  src: local(BodoniSvtyTwoITCTT-Book), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.eot?#iefix") format("embedded-opentype"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.woff") format("woff"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.ttf") format("truetype"), url("fonts/BodoniSvtyTwoITCTT-Book/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+    font-family: 'Lato', sans-serif;
+*/
+img {
+  max-width: 100%; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: #1E1E1E; }
+
+a:hover {
+  text-decoration: none; }
+
+h1 {
+  font-size: 6rem; }
+
+h2 {
+  font-size: 3.3rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h1, h3 {
+  font-family: "BodoniSvtyTwoITCTT-Book"; }
+
+p {
+  line-height: 26px; }
+
+iframe {
+  width: 100%; }
+
+.heading {
+  font-family: "BodoniSvtyTwoITCTT-Book";
+  letter-spacing: 3px;
+  margin: 50px 0;
+  text-transform: uppercase; }
+  .heading:after {
+    content: '';
+    margin: 20px 0;
+    width: 6%;
+    height: 1px;
+    background-color: #ECD9D9;
+    display: block; }
+
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 3.6rem; }
+  .heading {
+    letter-spacing: 5px; } }
+
+.btn {
+  border: 1px solid #1e1e1e;
+  padding: 13px 34px; }
 
 header {
   background-color: #fff; }
