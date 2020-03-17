@@ -6,28 +6,28 @@ $(document).ready(function () {
         let headerH = $('header').innerHeight();
         $('.hero').css('margin-top', headerH);
         $('.contact-content').css('margin-top', headerH);
-         $('.blog-single-header').css('margin-top', headerH);
+        $('.blog-single-header').css('margin-top', headerH);
     }
 
     heroSectionMargin();
 
     $(window).resize(function () {
         heroSectionMargin();
-    })
+    });
 
     //OWL CAROUSEL
 
-    $('.owl-carousel').owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 7000
-    });
+    if ($('.owl-carousel').length > 0) {
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 7000
+        });
+    }
 
-    //ANIMATION ON SCROLL
 
-    //AOS.init();
 
     //COSTUME ANIMATIONS
 
@@ -44,73 +44,78 @@ $(document).ready(function () {
             }
         });
     }
+
     animation();
+
     $(window).scroll(function () {
         animation();
     });
 
+
     //FORM VALIDATION
 
+    if ($('.contact-form').length > 0) {
+        $(".contact-form").validate({
+            highlight: function (element) {
+                $(element).addClass("is-invalid").removeClass("is-valid");
+            },
+            unhighlight: function (element) {
+                $(element).removeClass('is-invalid').addClass('is-valid');
+            },
+            rules: {
+                name: {
+                    required: true,
+                    rangelength: [2, 20]
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
 
-    $(".contact-form").validate({
-        highlight: function (element) {
-            $(element).addClass("is-invalid").removeClass("is-valid");
-        },
-        unhighlight: function (element) {
-            $(element).removeClass('is-invalid').addClass('is-valid');
-        },
-        rules: {
-            name: {
-                required: true,
-                rangelength: [2, 20]
+                subject: {
+                    required: true,
+                    rangelength: [2, 20]
+
+                },
+
+                message: {
+                    required: true,
+                    maxlength: 255
+                }
+
+
             },
-            email: {
-                required: true,
-                email: true
+            messages: {
+                name: {
+                    required: 'Name and surename is required field.',
+                    rangelength: 'Name must have between 2 and 20 characters.'
+                },
+                email: {
+                    required: 'Email is required field.',
+                    email: 'Enter valid email.'
+                },
+
+                subject: {
+                    required: 'Subject is required field.',
+                    rangelength: 'Subject must have between 2 and 20 characters.'
+                },
+
+                message: {
+                    required: 'Message is required field.',
+                    maxlength: 'Max characters are 255.'
+                }
+
             },
-            
-            subject :{
-                required: true, 
-                rangelength: [2, 20]
-                
-            },
-            
-            message: {
-                required: true,
-                maxlength: 255
+            errorElement: 'p',
+            errorPlacement: function (error, element) {
+                error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
             }
 
-
-        },
-        messages: {
-            name: {
-                required: 'Name is required field.',
-                rangelength: 'Name must have between 2 and 20 characters.'
-            },
-            email: {
-                required: 'Name is required field.',
-                email: 'Enter valid email.'
-            },
-            
-            subject : {
-                 required: 'Subject is required field.',
-                rangelength: 'Subject must have between 2 and 20 characters.'
-            },
-            
-            message: {
-                required: 'Message is required field.',
-                maxlength: 'Max characters are 255.'
-            }
-
-        },
-        errorElement: 'p',
-        errorPlacement: function (error, element) {
-            error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
-        }
-
-    });
+        });
+    }
 
 });
+
 
 
 
